@@ -55,6 +55,7 @@ export default function OrderProvider({ children }: { children: React.ReactNode 
     e.preventDefault();
     const form = e.currentTarget;
     if (!form.reportValidity()) return;
+    
     const fd = new FormData(form);
     const data: SuccessData = {
       prenom: String(fd.get("prenom") || ""),
@@ -83,20 +84,49 @@ export default function OrderProvider({ children }: { children: React.ReactNode 
     };
 
     try {
+      // Vérification que Formspree est configuré
       if (!FORMSPREE_ENDPOINT) {
-        // Formspree pas encore configuré : mode démo (voir SETUP-EMAIL.txt).
-        console.warn("Formspree non configuré — commande affichée en local :", payload);
-      } else {
-        const res = await fetch(FORMSPREE_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify(payload),
-        });
-        if (!res.ok) throw new Error("Échec de l'envoi");
+        console.warn("⚠️ Formspree non configuré — mode démo activé");
+        console.log("📦 Commande (démo) :", payload);
+        // En mode démo, on simule un succès
+        setTimeout(() => {
+          setSuccess(data);
+          setSubmitting(false);
+        }, 1000);
+        return;
       }
+
+      console.log("📤 Envoi vers Formspree :", FORMSPREE_ENDPOINT);
+      console.log("📦 Payload :", payload);
+
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      // Gestion des réponses Formspree
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        console.error("❌ Erreur Formspree :", errorData);
+        throw new Error(errorData.error || `Erreur ${res.status}: ${res.statusText}`);
+      }
+
+      const responseData = await res.json();
+      console.log("✅ Réponse Formspree :", responseData);
+      
       setSuccess(data);
-    } catch {
-      setError("L'envoi a échoué. Vérifiez votre connexion et réessayez.");
+      
+    } catch (err) {
+      console.error("❌ Erreur d'envoi :", err);
+      setError(
+        err instanceof Error 
+          ? err.message 
+          : "L'envoi a échoué. Vérifiez votre connexion et réessayez."
+      );
     } finally {
       setSubmitting(false);
     }

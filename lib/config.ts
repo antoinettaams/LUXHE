@@ -1,6 +1,6 @@
 // Paramètres commerciaux centralisés
-export const UNIT_PRICE = 25000; // prix unitaire en FCFA
-export const OLD_PRICE = 45000; // prix barré
+export const UNIT_PRICE = 40000; // prix unitaire en FCFA
+export const OLD_PRICE = 50000; // prix barré
 export const SHIPPING = 0; // livraison gratuite
 export const CURRENCY = "F"; // suffixe affiché
 

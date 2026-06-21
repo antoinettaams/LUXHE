@@ -122,7 +122,7 @@ export default function Home() {
                 <span className="rating-text">4,8/5 · plus de 1 346 avis</span>
               </div>
               <p className="lede">
-                Voyagez plus léger, plus malin — et toujours avec style. Le sac qui
+                Voyagez plus léger, plus malin et toujours avec style. Le sac qui
                 emporte tout votre dressing sans le moindre pli, et complète chacun de vos looks.
               </p>
               <div className="price-row">
@@ -139,8 +139,8 @@ export default function Home() {
               <OrderButton className="btn btn-solid btn-block">Commander maintenant</OrderButton>
 
               <div className="badges-row">
-                <div className="badge-item"><Icon name="users" /><span><strong>100 000+ clientes ravies</strong> Elles partent avec leur LUXHE</span></div>
-                <div className="badge-item"><Icon name="shield" /><span><strong>Garantie 100 jours</strong> Satisfait ou remboursé</span></div>
+                <div className="badge-item"><Icon name="users" /><span><strong>500+ clients ravis</strong> Ils partent avec leur LUXHE</span></div>
+                <div className="badge-item"><Icon name="shield" /><span><strong>Garantie 30 jours</strong> Satisfait ou remboursé</span></div>
                 <div className="badge-item"><Icon name="truck" /><span><strong>Livraison gratuite</strong> Paiement à la livraison</span></div>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
         {/* 4 FONCTIONNALITÉS (format photo) */}
         <section id="atouts" className="feat-photos">
           <div className="container">
-            <h2 className="fp-title">4 fonctionnalités auxquelles seules les femmes penseraient à penser (sérieusement)</h2>
+            <h2 className="fp-title">4 fonctionnalités auxquelles vous devriez commencé à penser (sérieusement)</h2>
             <div className="fp-grid">
               {FEAT_PHOTOS.map((f) => (
                 <div key={f.title} className="fp-item">
@@ -305,8 +305,8 @@ export default function Home() {
             <div className="vsc-foot">
               <OrderButton className="btn btn-solid">Configurez votre sac</OrderButton>
               <ul className="vsc-trust">
-                <li><Icon name="users" className="svg-ic" /> Plus de 100 000 exemplaires vendus</li>
-                <li><Icon name="shield" className="svg-ic" /> Garantie de remboursement de 100 jours</li>
+                <li><Icon name="users" className="svg-ic" /> Plus de 500 exemplaires vendus</li>
+                <li><Icon name="shield" className="svg-ic" /> Garantie de remboursement de 30 jours</li>
               </ul>
             </div>
           </div>
@@ -315,8 +315,8 @@ export default function Home() {
         {/* TÉMOIGNAGES DÉTAILLÉS */}
         <section id="avis" className="reviews2">
           <div className="container">
-            <h2 className="section-title">Plus de 100 000 voyageuses ne peuvent pas se tromper…</h2>
-            <p className="section-sub">Noté 4,8/5 sur plus de 1 346 avis</p>
+            <h2 className="section-title">Plus de 500 voyageurs ne peuvent pas se tromper…</h2>
+            <p className="section-sub">Noté 4,8/5 sur plus de 350 avis</p>
             <div className="review2-grid">
               {REVIEWS2.map((r) => (
                 <div key={r.name} className="review2-card">
@@ -336,9 +336,9 @@ export default function Home() {
         {/* GARANTIE */}
         <section id="garantie" className="guarantee">
           <div className="container guarantee-inner">
-            <span className="seal">100<small>JOURS</small></span>
+            <span className="seal">30<small>JOURS</small></span>
             <div>
-              <h2>Satisfait ou remboursé pendant 100 jours</h2>
+              <h2>Satisfait ou remboursé pendant 30 jours</h2>
               <p>
                 Essayez le Sac de Voyage LUXHE sans risque. S&apos;il ne vous convient pas,
                 on vous rembourse — simplement. Et vous ne payez qu&apos;à la livraison :
@@ -370,7 +370,7 @@ export default function Home() {
             <h2 className="section-title">La promesse LUXHE</h2>
             <div className="promise-row">
               <div className="promise-item"><Icon name="truck" className="svg-ic big" /><h4>Livraison gratuite</h4><p>Expédition rapide et soignée, partout.</p></div>
-              <div className="promise-item"><Icon name="users" className="svg-ic big" /><h4>100 000+ sacs vendus</h4><p>L&apos;accessoire de voyage incontournable.</p></div>
+              <div className="promise-item"><Icon name="users" className="svg-ic big" /><h4>500+ sacs vendus</h4><p>L&apos;accessoire de voyage incontournable.</p></div>
               <div className="promise-item"><Icon name="chat" className="svg-ic big" /><h4>Support 7j/7</h4><p>Une équipe à votre écoute, rien que pour vous.</p></div>
             </div>
           </div>
@@ -380,9 +380,9 @@ export default function Home() {
         <section className="final-cta">
           <div className="container">
             <h2>Votre prochain départ commence ici.</h2>
-            <p>Rejoignez plus de 100 000 voyageuses qui ne partent plus sans leur LUXHE.</p>
+            <p>Rejoignez plus de 500 voyageurs qui ne partent plus sans leur LUXHE.</p>
             <OrderButton className="btn btn-light btn-lg">Commander mon Sac de Voyage</OrderButton>
-            <p className="cta-note">Livraison gratuite · Paiement à la livraison · Garantie 100 jours</p>
+            <p className="cta-note">Livraison gratuite · Paiement à la livraison · Garantie 30 jours</p>
           </div>
         </section>
       </main>
