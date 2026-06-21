@@ -1,0 +1,33 @@
+RECEVOIR LES COMMANDES PAR E-MAIL (Formspree)
+==============================================
+
+Les commandes seront envoyées à : antoinettaams@gmail.com
+
+Le formulaire est déjà câblé sur Formspree. Il ne manque qu'une chose :
+votre identifiant de formulaire. Étapes (5 minutes, gratuit) :
+
+1. Allez sur https://formspree.io et créez un compte
+   avec l'adresse  antoinettaams@gmail.com.
+
+2. Cliquez sur « New Form », donnez-lui un nom (ex. « Commandes LUXHE »).
+   Formspree vous donne une adresse du type :
+        https://formspree.io/f/xvgkabcd
+   L'identifiant est la partie après /f/  →  ici  "xvgkabcd".
+
+3. Ouvrez le fichier  .env.local  à la racine du projet et complétez :
+        NEXT_PUBLIC_FORMSPREE_ID=xvgkabcd
+   (remplacez par VOTRE identifiant)
+
+4. Redémarrez le serveur :  arrêtez puis relancez  npm run dev
+   (les variables d'environnement sont lues au démarrage).
+
+5. Faites une commande test sur le site. Le tout premier envoi déclenche
+   un e-mail de confirmation Formspree : cliquez le lien pour activer.
+   Ensuite, chaque commande arrive directement dans la boîte mail.
+
+Remarque : tant que l'identifiant n'est pas renseigné, le site fonctionne
+en « mode démo » (la commande s'affiche mais n'est pas envoyée). Une fois
+l'identifiant collé, l'envoi e-mail est automatique.
+
+Champs reçus dans l'e-mail : Produit, Prénom, Nom, Téléphone,
+Lieu de résidence, Nombre de sacs, Prix unitaire, Livraison, Total à payer.

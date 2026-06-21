@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:luhxe.com)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx -v)",
+      "Bash(npm install *)",
+      "Bash(timeout 25 npm run dev)",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://luhxe.com/products/luhxe\" -o /tmp/luhxe.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /tmp/luxhe_local.html -w \"%{http_code}\" http://localhost:8123/)",
+      "Bash(curl -s \"http://localhost:8123/_next/static/css/app/layout.css?v=1782042980619\" -o /tmp/layout.css)",
+      "mcp__Claude_in_Chrome__select_browser",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "Bash(curl -s -o /tmp/lx3.html -w \"%{http_code}\" http://localhost:8123/)",
+      "mcp__Claude_in_Chrome__get_page_text"
+    ]
+  }
+}

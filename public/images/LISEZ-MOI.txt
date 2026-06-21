@@ -1,0 +1,31 @@
+PHOTOS DU SAC — comment les ajouter
+=====================================
+
+Tant qu'aucune image n'est présente, la page affiche automatiquement un
+visuel de remplacement (sac stylisé LUXHE). Pour mettre VOS photos du sac
+crème/cognac, déposez simplement des fichiers .jpg portant ces noms exacts
+dans ce dossier "images" :
+
+Galerie (haut de page) :
+  sac-1.jpg   → photo principale (la photo que vous m'avez envoyée)
+  sac-2.jpg   → gros plan finitions / dorures
+  sac-3.jpg   → compartiment chaussures
+  sac-4.jpg   → mise en situation / voyage
+
+Section "4 fonctionnalités" (4 colonnes, photos carrées) :
+  feature-roues.jpg       → sac avec roues / poignée
+  feature-vetements.jpg   → vêtements sur le cintre intégré (sans plis)
+  feature-chaussures.jpg  → compartiment chaussures
+  feature-cabine.jpg      → sac en format cabine / trolley
+
+Section "Enclenchez-les" (roues) :
+  roues-demo.jpg      → mains qui sortent la poignée / les roues (format paysage)
+
+Section caractéristiques (collage de 3 images) :
+  durabilite-1.jpg    → grande image : personne avec le sac à roulettes (format portrait)
+  durabilite-2.jpg    → petite image : détail haut du sac
+  durabilite-3.jpg    → petite image : gros plan texture du cuir
+
+Conseil : images carrées (~1000x1000 px) pour la galerie et les "4 fonctionnalités" ;
+paysage pour "roues-demo", portrait pour "durabilite-1". Aucun réglage à faire :
+déposez les fichiers, rafraîchissez la page, vos photos apparaissent.

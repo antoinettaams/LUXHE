@@ -1,0 +1,18 @@
+VIDÉO DE LA SECTION "ORGANISER SES BAGAGES INTELLIGEMMENT"
+===========================================================
+
+Un emplacement vidéo est réservé à gauche de cette section (comme sur le
+site concurrent). Tant qu'aucune vidéo n'est présente, un cadre stylisé
+"Emplacement vidéo" s'affiche.
+
+Pour mettre votre vidéo : déposez un fichier MP4 ici, nommé exactement :
+
+  smart-packing.mp4
+
+(optionnel) une image d'aperçu affichée avant lecture :
+
+  ../images/video-poster.jpg   (donc public/images/video-poster.jpg)
+
+Rafraîchissez la page : la vidéo remplace automatiquement le cadre,
+avec les contrôles de lecture. Format conseillé : vertical (4:5) ou
+carré, ~1080px de large.
