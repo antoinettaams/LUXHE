@@ -21,7 +21,7 @@ export default function Gallery() {
     <div className="gallery">
       <div className="gallery-main">
         <span className="badge-circle">
-          <span className="badge-num">100 000+</span>
+          <span className="badge-num">500+</span>
           <span className="badge-label">VOYAGEURS</span>
         </span>
         {/* clé = remonte le composant pour réinitialiser l'état du fallback */}
