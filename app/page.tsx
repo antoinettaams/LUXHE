@@ -119,7 +119,7 @@ export default function Home() {
               <h1>Le Sac de Voyage LUXHE 2.0</h1>
               <div className="rating">
                 <span className="stars" aria-label="Noté 4,8 sur 5">★★★★★</span>
-                <span className="rating-text">4,8/5 · plus de 1 346 avis</span>
+                <span className="rating-text">4,8/5 · plus de 500 avis</span>
               </div>
               <p className="lede">
                 Voyagez plus léger, plus malin et toujours avec style. Le sac qui
