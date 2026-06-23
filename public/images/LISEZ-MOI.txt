@@ -6,11 +6,15 @@ visuel de remplacement (sac stylisé LUXHE). Pour mettre VOS photos du sac
 crème/cognac, déposez simplement des fichiers .jpg portant ces noms exacts
 dans ce dossier "images" :
 
-Galerie (haut de page) :
-  sac-1.jpg   → photo principale (la photo que vous m'avez envoyée)
-  sac-2.jpg   → gros plan finitions / dorures
-  sac-3.jpg   → compartiment chaussures
-  sac-4.jpg   → mise en situation / voyage
+Galerie (haut de page) — UNE SÉRIE PAR COULEUR :
+  Beige : sac-beige-1.jpg, sac-beige-2.jpg, sac-beige-3.jpg, sac-beige-4.jpg
+  Rosé  : sac-rose-1.jpg,  sac-rose-2.jpg,  sac-rose-3.jpg,  sac-rose-4.jpg
+  Noir  : sac-noir-1.jpg,  sac-noir-2.jpg,  sac-noir-3.jpg,  sac-noir-4.jpg
+  (1 = photo principale, 2 = finitions, 3 = compartiment chaussures, 4 = en voyage)
+
+  Quand l'acheteur clique sur une couleur, la galerie charge la série
+  correspondante. Tant qu'une série manque, un visuel stylisé DE LA BONNE
+  COULEUR s'affiche automatiquement — rien d'autre à faire.
 
 Section "4 fonctionnalités" (4 colonnes, photos carrées) :
   feature-bandouliere.jpg → sac porté à l'épaule / bandoulière & poignées

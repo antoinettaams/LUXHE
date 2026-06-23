@@ -1,11 +1,11 @@
 import { Fragment } from "react";
-import OrderProvider from "@/components/OrderProvider";
+import OrderProvider, { ColorSelector, OfferSelector } from "@/components/OrderProvider";
 import OrderButton from "@/components/OrderButton";
 import Gallery from "@/components/Gallery";
 import ProductImage from "@/components/ProductImage";
 import VideoSlot from "@/components/VideoSlot";
 import Icon from "@/components/Icon";
-import { UNIT_PRICE, OLD_PRICE, formatPrice } from "@/lib/config";
+import { UNIT_PRICE, OLD_PRICE, DISCOUNT_PCT, formatPrice } from "@/lib/config";
 
 /* Données des sections (faciles à éditer) */
 
@@ -85,7 +85,7 @@ export default function Home() {
               <span>✦ Format cabine approuvé sur 100+ compagnies</span>
               <span>✦ 🏆 Meilleur sac de voyage 2026</span>
               <span>✦ Livraison gratuite · Paiement à la livraison</span>
-              <span>✦ Jusqu&apos;à −45% aujourd&apos;hui</span>
+              <span>✦ Jusqu&apos;à −44% aujourd&apos;hui</span>
             </span>
           ))}
         </div>
@@ -128,8 +128,13 @@ export default function Home() {
               <div className="price-row">
                 <span className="price-now">{formatPrice(UNIT_PRICE)}</span>
                 <span className="price-old">{formatPrice(OLD_PRICE)}</span>
-                <span className="price-tag">−45%</span>
+                <span className="price-tag">−{DISCOUNT_PCT}%</span>
               </div>
+
+              <p className="eyebrow">Choisissez votre offre :</p>
+              <OfferSelector />
+
+              <ColorSelector />
 
               <p className="eyebrow">Pourquoi on l&apos;adore :</p>
               <ul className="quick-benefits">
