@@ -11,13 +11,13 @@ import { UNIT_PRICE, OLD_PRICE, formatPrice } from "@/lib/config";
 
 const HERO_BENEFITS = [
   "Contient 38+ vêtements et 5 paires de chaussures",
-  "Passe de la bandoulière aux roues en quelques secondes",
+  "Se porte à la main, à l'épaule ou en bandoulière amovible",
   "Chaque tenue arrive sans un seul pli",
   "Évitez l'enregistrement et économisez sur les frais",
 ];
 
 const FEAT_PHOTOS = [
-  { img: "/images/feature-roues.jpg", shape: "bag" as const, tag: "NOUVEAU", title: "Des roues quand vous en avez besoin, des sangles quand vous n'en avez pas besoin.", text: "Passez sans effort du transport à roulettes dans les aéroports au porté épaule confortable. Voyagez léger ou retirez les roues pour un style épuré." },
+  { img: "/images/feature-bandouliere.jpg", shape: "bag" as const, tag: "", title: "Bandoulière matelassée & poignées renforcées", text: "Portez-le à la main, à l'épaule ou en bandoulière amovible et rembourrée. Trois façons de le porter, en tout confort, pour une silhouette toujours élégante." },
   { img: "/images/feature-vetements.jpg", shape: "detail" as const, tag: "", title: "Vos vêtements, toujours sans plis (sans exagération)", text: "Grâce au cintre intégré et à la doublure infroissable, vos vêtements arrivent aussi frais que lorsque vous les avez emballés ; inutile de les repasser." },
   { img: "/images/feature-chaussures.jpg", shape: "shoe" as const, tag: "", title: "Un espace dédié rien que pour vos chaussures", text: "Rangez vos chaussures de randonnée, vos talons pour le dîner et vos chaussons confortables dans un seul sac, sans qu'ils touchent vos vêtements. Idéal pour emporter plusieurs paires, en toute simplicité." },
   { img: "/images/feature-cabine.jpg", shape: "travel" as const, tag: "", title: "Se range dans les compartiments à bagages en cabine, sans frais de bagages", text: "Conçu pour respecter les dimensions des bagages cabine, ce bagage vous permet d'éviter les files d'attente à l'enregistrement et de faire des économies. Voyagez plus intelligemment, sans compromis." },
@@ -37,9 +37,9 @@ const CAPACITY = [
   { icon: "hanger", title: "Sans aucun pli", text: "Vos tenues restent fraîches et prêtes." },
 ];
 
-const WHEEL_FEATS = [
-  { title: "Poignée télescopique", text: "Roulement fluide, réglable à la hauteur idéale." },
-  { title: "Roues à 360°", text: "Roues à fixation rapide pour un roulement facile." },
+const CARRY_FEATS = [
+  { title: "Bandoulière matelassée", text: "Amovible et réglable, pour un confort total sur l'épaule." },
+  { title: "Poignées renforcées", text: "Coutures doublées et prise en main solide, sac après sac." },
 ];
 
 const WHEEL_DETAILS = [
@@ -54,13 +54,13 @@ const VS_ROWS = [
   "Approuvé pour les bagages à main",
   "Conception anti-rides",
   "Cintre intégré",
-  "Roues et poignée détachables",
+  "Bandoulière amovible & poignées renforcées",
   "Résistant et étanche",
   "Compartiments d'organisation",
 ];
 
 const REVIEWS2 = [
-  { title: "Les roues ont changé ma façon de voyager 😍", text: "Je redoutais de traîner ma valise dans les aéroports. Avec LUXHE, je clipse les roues et tout glisse tout seul. Les correspondances et les longues marches jusqu'à la porte sont devenues simples.", name: "Aïcha K.", city: "Cotonou" },
+  { title: "Léger et tellement pratique 😍", text: "Je redoutais les longues marches jusqu'à la porte d'embarquement avec un sac lourd. Avec LUXHE, tout est si bien organisé et léger que je le porte sans effort. Les correspondances sont devenues un jeu d'enfant.", name: "Aïcha K.", city: "Cotonou" },
   { title: "Enfin un sac qui contient TOUT ce que je veux !", text: "Il contient tous mes essentiels, des chaussures pour chaque occasion et des tenues pour une semaine complète. Je ne laisse plus rien derrière moi. J'ai repris le contrôle de mes valises.", name: "Mariam D.", city: "Abidjan" },
   { title: "Je l'emporte partout, j'en ai fait acheter à toutes mes copines !", text: "J'ai tout essayé pour éviter les plis en voyage, mais le cintre intégré et la doublure anti-froissage fonctionnent vraiment. Mes tenues restent impeccables et prêtes à porter.", name: "Sarah T.", city: "Paris" },
 ];
@@ -226,27 +226,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ENCLENCHEZ-LES (texte + panneau image) */}
+        {/* PORTAGE (texte + panneau image) */}
         <section className="wheels-hero">
           <div className="container wh-grid">
             <div className="wh-text">
-              <h2><span className="wh-hl">Enclenchez-les, roulez en douceur et dites adieu aux efforts physiques intenses.</span></h2>
+              <h2><span className="wh-hl">Portez-le comme vous voulez, sans jamais forcer.</span></h2>
               <p>
-                Fini les efforts pour soulever ou jongler avec des bagages lourds. Fixez les roulettes,
-                glissez-vous dans l&apos;aéroport comme si de rien n&apos;était, et une fois vos affaires terminées,
-                retirez-les et rangez-les à l&apos;intérieur. C&apos;est aussi simple que ça : sans outils, sans stress,
-                voyagez en toute sérénité.
+                Fini les sacs lourds et inconfortables. Saisissez-le par les poignées renforcées,
+                glissez la bandoulière matelassée sur l&apos;épaule, et oubliez-le tant il est léger.
+                Sans effort, sans douleur, voyagez en toute sérénité et avec style.
               </p>
               <OrderButton className="btn btn-solid btn-lg">Configurez votre sac</OrderButton>
               <ul className="wh-trust">
                 <li><Icon name="truck" className="svg-ic" /> Livraison rapide</li>
                 <li><span className="sep" /></li>
-                <li><Icon name="shield" className="svg-ic" /> Garantie de remboursement de 100 jours</li>
+                <li><Icon name="shield" className="svg-ic" /> Garantie de remboursement de 30 jours</li>
               </ul>
             </div>
             <div className="wheel-panel">
               <div className="wheel-feats">
-                {WHEEL_FEATS.map((f) => (
+                {CARRY_FEATS.map((f) => (
                   <div key={f.title} className="wheel-feat">
                     <h4>{f.title}</h4>
                     <p>{f.text}</p>
@@ -254,7 +253,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="wheel-img">
-                <ProductImage src="/images/roues-demo.jpg" alt="Poignée télescopique et roues du sac" shape="travel" />
+                <ProductImage src="/images/carry-demo.jpg" alt="Bandoulière et poignées du sac" shape="travel" />
               </div>
             </div>
           </div>

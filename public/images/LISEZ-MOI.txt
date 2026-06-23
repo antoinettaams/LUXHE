@@ -13,19 +13,19 @@ Galerie (haut de page) :
   sac-4.jpg   → mise en situation / voyage
 
 Section "4 fonctionnalités" (4 colonnes, photos carrées) :
-  feature-roues.jpg       → sac avec roues / poignée
+  feature-bandouliere.jpg → sac porté à l'épaule / bandoulière & poignées
   feature-vetements.jpg   → vêtements sur le cintre intégré (sans plis)
   feature-chaussures.jpg  → compartiment chaussures
-  feature-cabine.jpg      → sac en format cabine / trolley
+  feature-cabine.jpg      → sac en format cabine
 
-Section "Enclenchez-les" (roues) :
-  roues-demo.jpg      → mains qui sortent la poignée / les roues (format paysage)
+Section "Portage" :
+  carry-demo.jpg      → sac porté à la main / à l'épaule (format paysage)
 
 Section caractéristiques (collage de 3 images) :
-  durabilite-1.jpg    → grande image : personne avec le sac à roulettes (format portrait)
+  durabilite-1.jpg    → grande image : personne avec le sac (format portrait)
   durabilite-2.jpg    → petite image : détail haut du sac
   durabilite-3.jpg    → petite image : gros plan texture du cuir
 
 Conseil : images carrées (~1000x1000 px) pour la galerie et les "4 fonctionnalités" ;
-paysage pour "roues-demo", portrait pour "durabilite-1". Aucun réglage à faire :
+paysage pour "carry-demo", portrait pour "durabilite-1". Aucun réglage à faire :
 déposez les fichiers, rafraîchissez la page, vos photos apparaissent.
