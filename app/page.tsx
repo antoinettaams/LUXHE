@@ -258,7 +258,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="wheel-img">
-                <ProductImage src="/images/carry-demo.jpg" alt="Bandoulière et poignées du sac" shape="travel" />
+                <ProductImage src="/images/carry-demo.png" alt="Bandoulière et poignées du sac" shape="travel" />
               </div>
             </div>
           </div>
@@ -276,9 +276,9 @@ export default function Home() {
               ))}
             </div>
             <div className="wd-collage">
-              <div className="big"><ProductImage src="/images/durabilite-1.jpg" alt="Le sac en situation de voyage" shape="travel" /></div>
-              <div className="small"><ProductImage src="/images/durabilite-2.jpg" alt="Détail du sac" shape="detail" /></div>
-              <div className="small"><ProductImage src="/images/durabilite-3.jpg" alt="Texture du cuir" shape="detail" /></div>
+              <div className="big"><ProductImage src="/images/sac-1.png" alt="Le sac en situation de voyage" shape="travel" /></div>
+              <div className="small"><ProductImage src="/images/detail-1.png" alt="Détail du sac" shape="detail" /></div>
+              <div className="small"><ProductImage src="/images/texture-1.png" alt="Texture du cuir" shape="detail" /></div>
             </div>
           </div>
         </section>
