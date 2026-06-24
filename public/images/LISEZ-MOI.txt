@@ -6,15 +6,18 @@ visuel de remplacement (sac stylisé LUXHE). Pour mettre VOS photos du sac
 crème/cognac, déposez simplement des fichiers .jpg portant ces noms exacts
 dans ce dossier "images" :
 
-Galerie (haut de page) — UNE SÉRIE PAR COULEUR :
-  Beige : sac-beige-1.jpg, sac-beige-2.jpg, sac-beige-3.jpg, sac-beige-4.jpg
-  Rosé  : sac-rose-1.jpg,  sac-rose-2.jpg,  sac-rose-3.jpg,  sac-rose-4.jpg
-  Noir  : sac-noir-1.jpg,  sac-noir-2.jpg,  sac-noir-3.jpg,  sac-noir-4.jpg
-  (1 = photo principale, 2 = finitions, 3 = compartiment chaussures, 4 = en voyage)
+Galerie (haut de page) — UNE SÉRIE PAR COULEUR (format .png) :
+  Beige : beige-main.png, beige-1.png, beige-2.png, beige-3.png
+  Rosé  : rose-main.png,  rose-1.png,  rose-2.png,  rose-3.png
+  Noir  : noir-main.png,  noir-1.png,  noir-2.png,  noir-3.png
 
-  Quand l'acheteur clique sur une couleur, la galerie charge la série
-  correspondante. Tant qu'une série manque, un visuel stylisé DE LA BONNE
-  COULEUR s'affiche automatiquement — rien d'autre à faire.
+  L'image "…-main" est la photo PRINCIPALE affichée en grand ; les autres
+  deviennent les vignettes. Quand l'acheteur clique sur une couleur, la
+  galerie charge la série correspondante (et revient sur l'image principale).
+  Si un fichier manque, un visuel stylisé DE LA BONNE COULEUR s'affiche.
+
+  ⚠️ Vérifiez que le CONTENU des photos correspond bien à la couleur :
+  par ex. noir-main.png doit montrer le sac NOIR (et non un sac crème).
 
 Section "4 fonctionnalités" (4 colonnes, photos carrées) :
   feature-bandouliere.jpg → sac porté à l'épaule / bandoulière & poignées
