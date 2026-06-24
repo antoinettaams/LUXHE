@@ -67,7 +67,7 @@ const REVIEWS2 = [
 
 const FAQ = [
   ["Passe-t-il vraiment en cabine ?", "Oui ! Le sac est spécialement conçu pour respecter le format cabine de la plupart des compagnies et passer sous le siège. Une question sur votre compagnie ? Écrivez-nous, on vérifie pour vous."],
-  ["Comment fonctionnent les retours ?", "Nous sommes certains que vous l'adorerez : vous bénéficiez d'une garantie satisfait ou remboursé de 100 jours. Un message suffit, et on s'occupe du reste."],
+  ["Comment fonctionnent les retours ?", "Nous sommes certains que vous l'adorerez : vous bénéficiez d'une garantie satisfait ou remboursé de 30 jours. Un message suffit, et on s'occupe du reste."],
   ["Combien de vêtements puis-je emporter ?", "De quoi tenir jusqu'à 10 jours de tenues du quotidien, plus 2 à 3 robes sans plis — parfait pour les séjours prolongés comme pour les occasions variées."],
   ["Est-il imperméable ?", "Oui, le revêtement résistant à l'eau garde vos affaires au sec, à l'abri de la pluie ou des éclaboussures accidentelles."],
   ["En quelle matière est-il fabriqué ?", "En cuir vegan PU haut de gamme : une matière à la fois durable, facile d'entretien et respectueuse de l'environnement, sans matière animale."],
